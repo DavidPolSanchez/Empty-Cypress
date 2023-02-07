@@ -1,6 +1,6 @@
 
 #  Cypress clean example
-This project is for showing hot to install cypress and how to create al the project structure and the default test and how to open the runer.
+This project is for showing how to install cypress and how to create all the project structure and the default test and how to open the runner.
 
 
 ## system requirements.
