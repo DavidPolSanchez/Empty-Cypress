@@ -1,6 +1,6 @@
 describe('template spec', () => {
   it('passes', () => {
-    cy.visit('https://boehringer-ingelheim.com/')
+    cy.visit('https://pro.boehringer-ingelheim.com/')
     //interaction with elements
     cy.get('.it-eprivacy-banner-btn--primary').click()
 
