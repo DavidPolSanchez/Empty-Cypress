@@ -7,8 +7,9 @@ module.exports = defineConfig({
     specPattern: 'cypress/e2e/**/*.js',
     excludeSpecPattern:['**/1-getting-started/*','**/2-advanced-examples/*'],
     setupNodeEvents(on, config) {
-      
+      //implents node events listeners here  
     },
+    baseUrl: 'https://ecommerce-playground.lambdatest.io',
   },
 });
 
