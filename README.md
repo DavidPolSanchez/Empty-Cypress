@@ -1,6 +1,9 @@
 
+![Logo](https://browserstack.wpenginepowered.com/wp-content/uploads/2022/06/cypress-bw.png)
+
+
 #  Cypress clean example
-This project is for showing how to install cypress and how to create all the project structure and the default test and how to open the runner.
+This project is for showing how to install cypress and how to create al the project structure and the default test and how to open the runner.
 
 
 ## system requirements.
