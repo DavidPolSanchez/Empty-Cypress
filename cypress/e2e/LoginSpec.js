@@ -1,5 +1,5 @@
 
-describe('Testing Blog Page', () => {
+describe('Testing Login Page', () => {
     beforeEach(() => {
         cy.visit("/index.php?route=account/login")
     })
@@ -10,10 +10,13 @@ describe('Testing Blog Page', () => {
 
     it("Should Log in ", () => {
         //*david@gmail.com
+        
         cy.get('#input-email').type("david@gmail.com")
         //*1234
+        
         cy.get('#input-password').type("1234")
         //?SUBMIT
+        
         cy.get('form > .btn').click()
         
         cy.title().should("eq","My Account")
