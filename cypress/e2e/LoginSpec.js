@@ -1,24 +1,26 @@
+import Login from "../Pages-POM/Login.PO"
+const login = new Login()
 
 describe('Testing Login Page', () => {
     beforeEach(() => {
-        cy.visit("/index.php?route=account/login")
+        login.visit()
     })
 
     it("should visit the Login page", () => {
-        cy.title().should("eq","Account Login")
+        cy.title().should("eq",login.title)
     })
 
     it("Should Log in ", () => {
         //*david@gmail.com
-        
-        cy.get('#input-email').type("david@gmail.com")
+        login.mailInput("david@gmail.com")
+       
         //*1234
+        login.passInput("1234")
         
-        cy.get('#input-password').type("1234")
         //?SUBMIT
+        login.submit()
         
-        cy.get('form > .btn').click()
-        
+         
         cy.title().should("eq","My Account")
     })
 })
