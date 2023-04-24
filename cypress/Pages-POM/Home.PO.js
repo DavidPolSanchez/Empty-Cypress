@@ -1,8 +1,9 @@
 class Home {
+    homeButton = "#search > div.search-button > button"
     constructor() {
         this.url = "/"
         this.title = "home"
-      }
+    }
     visit(){
         cy.visit("/")
     }
@@ -11,7 +12,7 @@ class Home {
     }
     
     getSearchButton() {
-        return cy.get("#search > div.search-button > button").first()
+        return cy.get(homeButton).first()
     }
     
     getHomeButton() {
@@ -50,6 +51,7 @@ class Home {
         )
     }
 }
+
 /**
  *  TODO: YOU NEED TO EXPORT THE CLASS
 */ 
